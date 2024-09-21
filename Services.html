@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="zdjeciainne/favicon.png" type="image/png">
+    <title>Grygiel Auto Serwis - usługi</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: auto; 
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: lightgray;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .content a{
+            text-decoration: none;
+            color: #000000;
+        }
+
+        @media (min-width: 1024px) {
+            .content {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .content h2,
+        .content h3,
+        .content h4,
+        .content h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .content img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .content h2,
+            .content h3,
+            .content h4,
+            .content h5 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                padding: 8px 10px;
+            }
+
+            .content img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Grygiel Auto Serwis</h1>
+        <a class="image-button" href="Index.html">
+            <img src="zdjeciainne/krzysztof-grygiel-logo.jpg" alt="Logo" width="150" height="79">
+        </a>
+    </header>
+
+    <nav>
+        <a href="Index.html">Start</a>
+        <a href="Services.html">Oferta</a>
+        <a href="Gallery.php">Galeria</a>
+        <a href="Reviews.html">Opinie</a>
+        <a href="Contact.html">Kontakt</a>
+    </nav>
+
+    <div class="content">
+        <div>
+            <h2><a href="Mechanics.html">Mechanika Samochodowa</a></h2>
+            <a class="image-button" href="Mechanics.html">
+                <img src="zdjecia/Mechanika.jpg" alt="Mechanika">
+            </a>
+        </div>
+        <div>
+            <h3><a href="Vulcanization.html">Wulkanizacja</a></h3>
+            <a class="image-button" href="Vulcanization.html">
+                <img src="zdjecia/Kola.jpg" alt="Wulkanizacja">
+            </a>
+        </div>
+        <div>
+            <h4><a href="Electrics.html">Elektryka I Elektronika Samochodowa</a></h4>
+            <a class="image-button" href="Electrics.html">
+                <img src="zdjecia/Elektryka.jpg" alt="Elektryka">
+            </a>
+        </div>
+        <div>
+            <h5><a href="AC.html">Napełnianie I Serwis Klimatyzacji</a></h5>
+            <a class="image-button" href="AC.html">
+                <img src="zdjecia/klima.jpg" alt="Klimatyzacja">
+            </a>
+        </div>
+        <div>
+            <h5><a href="WheelAlignment.html">Geometria</a></h5>
+            <a class="image-button" href="WheelAlignment.html">
+                <img src="zdjecia/geometria.jpg" alt="Geometria">
+            </a>
+        </div>
+        <div>
+            <h5><a href="RoadAssistance.html">Pomoc Drogowa</a></h5>
+            <a class="image-button" href="RoadAssistance.html">
+                <img src="zdjecia/laweta.jpg" alt="Pomoc Drogowa">
+            </a>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Grygiel Auto Serwis</p>
+        <p>Adres: ul. Starołęcka 85, 61-341 Poznań</p>
+        <p>Kontakt: <a href="tel:+48123456789">+48 123 456 789</a></p>
+        <p>Email: <a href="mailto:biuro@grygiel-autoserwis.pl">biuro@grygiel-autoserwis.pl</a></p>
+    </footer>
+</body>
+
+</html>

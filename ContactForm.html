@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="zdjeciainne/favicon.png" type="image/png">
+    <title>Grygiel Auto Serwis - Skontaktuj się</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #c8dfef;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                height: 300px;
+            }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .contact-cointainer {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .contact-left {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .contact-left-titlle {
+            font-weight: 600;
+            color: #34c0eb;
+            font-size: 40;
+            margin-bottom: 5px;
+        }
+
+        .contact-left-titlle hr {
+            border: none;
+            width: 120px;
+            height: 5px;
+            background-color: #34c0eb;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-inputs {
+            width: 400px;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            color: #666;
+            border-radius: 20px;
+        }
+
+        .contact-left textarea {
+            height: 140px;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+
+        .contact-inputs:focus {
+            border: 2px solid #555;
+        }
+
+        .contact-inputs::placeholder {
+            color: #666;
+        }
+
+        .contact-left button {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #FFF;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(270deg, #165264 0%, #0d6efd 100%);
+            cursor: pointer;
+        }
+
+        .contact-left button img {
+            height: 15px;
+        }
+
+        .contact-right img {
+            width: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-inputs {
+                width: 80vw;
+            }
+
+            .contact-right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Grygiel Auto Serwis</h1>
+        <a class="image-button" href="Index.html">
+            <img src="zdjeciainne/krzysztof-grygiel-logo.jpg" alt="Logo" width="150" height="79">
+        </a>
+    </header>
+
+    <nav>
+        <a href="Index.html">Start</a>
+        <a href="Services.html">Oferta</a>
+        <a href="Gallery.php">Galeria</a>
+        <a href="Reviews.html">Opinie</a>
+        <a href="Contact.html">Kontakt</a>
+    </nav>
+    <div class="contact-cointainer">
+        <form action="https://api.web3forms.com/submit" method="post" class="contact-left">
+            <div class="contact-left-titlle">
+                <h2>Skontaktuj się z nami</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="412fc223-9077-43d5-82f4-b55a8f144323">
+            <input type="text" name="name" placeholder="Imię" class="contact-inputs" required>
+            <input type="text" name="surname" placeholder="Nazwisko" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Email" class="contact-inputs" required>
+            <input type="tel" name="tel" placeholder="nr telefonu" class="contact-inputs" required>
+            <input type="text" name="vin" placeholder="nr VIN" class="contact-inputs">
+            <input type="text" name="rejerstracion" placeholder="nr rejerstracyjny" class="contact-inputs" required>
+            <textarea name="message" placeholder="Wiadomość" class="contact-inputs" required></textarea>
+            <button type="submit">Wyslij! <img src="zdjeciainne/arrow_icon.png" alt="arrow_icon"></button>
+        </form>
+        <div class="contact-right">
+            <img src="zdjeciainne/Mail.png" alt="">
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Grygiel Auto Serwis</p>
+        <p>Adres: ul. Starołęcka 85, 61-341 Poznań</p>
+        <p>Kontakt: <a href="tel:+48123456789">+48 123 456 789</a></p>
+        <p>Email: <a href="mailto:biuro@grygiel-autoserwis.pl">biuro@grygiel-autoserwis.pl</a></p>
+    </footer>
+</body>
+
+</html>

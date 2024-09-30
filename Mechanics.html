@@ -1,157 +1,183 @@
 <!doctype html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="zdjeciainne/favicon.png" type="image/png">
-        <title>Grygiel Auto Serwis - Mechanik</title>
-        <style>
-            body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-            }
 
-            header {
-                background-color: #333;
-                padding: 10px;
-                text-align: center;
-                color: white;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="zdjeciainne/favicon.png" type="image/png">
+    <title>Grygiel Auto Serwis - Mechanik</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
-            nav {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                background-color: #555;
-                padding: 10px;
-            }
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
 
-            nav a {
-                color: white;
-                text-decoration: none;
-                padding: 10px 20px;
-                margin: 5px;
-                border: 1px solid #fff;
-                border-radius: 5px;
-                transition: background-color 0.3s;
-            }
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
 
-            nav a:hover {
-                background-color: #777;
-            }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #555;
+            padding: 10px;
+        }
 
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #34c0eb;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        @media (max-width: 480px) {
             .hero {
-                position: relative;
-                width: 100%;
-                height: 400px;
-                overflow: hidden;
-            }
-
-            .hero img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                height: 300px;
             }
 
             section {
-                background-color: white;
-                padding: 20px;
-                margin: 20px auto;
-                max-width: 800px;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin: 10px;
             }
+        }
 
-            h2 {
-                color: #333;
-                font-size: 24px;
-                text-align: center;
-                margin-bottom: 20px;
-                border-bottom: 2px solid #34c0eb;
-                padding-bottom: 10px;
-            }
+        .highlight {
+            font-weight: bold;
+        }
+    </style>
+</head>
 
-            p {
-                margin-bottom: 20px;
-            }
+<body>
+    <header>
+        <h1>Grygiel Auto Serwis</h1>
+        <a class="image-button" href="Index.html">
+            <img src="zdjeciainne/krzysztof-grygiel-logo.jpg" alt="Logo" width="150" height="79">
+        </a>
+    </header>
 
-            footer {
-                background-color: #333;
-                color: white;
-                text-align: center;
-                padding: 20px;
-                margin-top: 20px;
-            }
+    <nav>
+        <a href="Index.html">Start</a>
+        <a href="Services.html">Oferta</a>
+        <a href="Gallery.php">Galeria</a>
+        <a href="Reviews.html">Opinie</a>
+        <a href="Contact.html">Kontakt</a>
+    </nav>
 
-            footer a {
-                color: white;
-            }
+    <!-- Nowa sekcja o usługach wymiany -->
+    <section>
+        <h2>Nasze Usługi Serwisowe</h2>
+        <p>
+            Grygiel Auto Serwis to miejsce, gdzie Twój samochód jest w dobrych rękach. <span class="highlight">Oferujemy
+                kompleksowe usługi serwisowe, aby Twój pojazd działał niezawodnie.</span> Nasz zespół doświadczonych
+            mechaników dokłada wszelkich starań, aby każda naprawa była wykonana z należytą starannością.
+        </p>
+        <p>
+            Specjalizujemy się w różnorodnych wymianach, które są kluczowe dla utrzymania Twojego samochodu w doskonałym
+            stanie. <span class="highlight">Wymieniamy między innymi:</span>
+        </p>
+        <ul>
+            <li><span class="highlight">Olej silnikowy</span> – Regularna wymiana oleju zapewnia długowieczność i
+                wydajność Twojego silnika. Stosujemy wyłącznie oleje renomowanych marek.</li>
+            <li><span class="highlight">Filtry</span> – Wymieniamy filtry powietrza, kabinowe, oleju oraz paliwa, aby
+                zadbać o czystość i jakość pracy silnika.</li>
+            <li><span class="highlight">Płyny eksploatacyjne</span> – Oferujemy wymianę płynu hamulcowego, chłodniczego
+                oraz płynu wspomagania, co zapewnia bezpieczną i komfortową jazdę.</li>
+            <li><span class="highlight">Świece zapłonowe i żarowe</span> – Odpowiednia wymiana świec jest kluczowa dla
+                optymalnej pracy silnika, szczególnie w samochodach benzynowych i diesla.</li>
+            <li><span class="highlight">Akumulatory</span> – Oferujemy diagnostykę i wymianę akumulatorów, aby Twój
+                samochód był zawsze gotowy do działania, bez względu na warunki.</li>
+        </ul>
+        <p>
+            Ponadto, wykonujemy inne istotne usługi serwisowe, takie jak: wymiana pasków klinowych, kontrola i wymiana
+            zawieszenia, oraz kompleksowe serwisowanie układu wydechowego. Zawsze działamy zgodnie z zaleceniami
+            producenta pojazdu, dzięki czemu każda wymiana jest profesjonalna i precyzyjna.
+        </p>
+        <p>
+            <span class="highlight">Oferujemy także sezonowe przeglądy,</span> które pozwalają wykryć potencjalne
+            problemy zanim staną się one poważnymi awariami. Naszym priorytetem jest zapewnienie, że Twój samochód
+            działa bezawaryjnie w każdych warunkach drogowych.
+        </p>
+        <p>
+            <span class="highlight">Niezależnie od tego, czy potrzebujesz drobnej wymiany, czy bardziej zaawansowanej
+                usługi,</span> jesteśmy tutaj, aby pomóc. Naszym celem jest zapewnienie, że każdy klient wyjedzie z
+            naszego serwisu w pełni zadowolony.
+        </p>
+    </section>
 
-            @media (max-width: 480px) {
-                .hero {
-                    height: 300px;
-                }
+    <footer>
+        <p>&copy; 2024 Grygiel Auto Serwis</p>
+        <p>Adres: ul. Starołęcka 85, 61-341 Poznań</p>
+        <p>Kontakt: <a href="tel:+48123456789">+48 123 456 789</a></p>
+        <p>Email: <a href="mailto:biuro@grygiel-autoserwis.pl">biuro@grygiel-autoserwis.pl</a></p>
+    </footer>
+</body>
 
-                section {
-                    margin: 10px;
-                }
-            }
-
-            .highlight {
-                font-weight: bold;
-            }
-        </style>
-    </head>
-
-    <body>
-        <header>
-            <h1>Grygiel Auto Serwis</h1>
-            <a class="image-button" href="Index.html">
-                <img src="zdjeciainne/krzysztof-grygiel-logo.jpg" alt="Logo" width="150" height="79">
-            </a>
-        </header>
-
-        <nav>
-            <a href="Index.html">Start</a>
-            <a href="Services.html">Oferta</a>
-            <a href="Gallery.php">Galeria</a>
-            <a href="Reviews.html">Opinie</a>
-            <a href="Contact.html">Kontakt</a>
-        </nav>
-
-        <!-- Nowa sekcja o usługach wymiany -->
-        <section>
-            <h2>Nasze Usługi Serwisowe</h2>
-            <p>
-                Grygiel Auto Serwis to miejsce, gdzie Twój samochód jest w dobrych rękach. <span class="highlight">Oferujemy kompleksowe usługi serwisowe, aby Twój pojazd działał niezawodnie.</span> Nasz zespół doświadczonych mechaników dokłada wszelkich starań, aby każda naprawa była wykonana z należytą starannością.
-            </p>
-            <p>
-                Specjalizujemy się w różnorodnych wymianach, które są kluczowe dla utrzymania Twojego samochodu w doskonałym stanie. <span class="highlight">Wymieniamy między innymi:</span>
-            </p>
-            <ul>
-                <li><span class="highlight">Olej silnikowy</span> – Regularna wymiana oleju zapewnia długowieczność i wydajność Twojego silnika. Stosujemy wyłącznie oleje renomowanych marek.</li>
-                <li><span class="highlight">Filtry</span> – Wymieniamy filtry powietrza, kabinowe, oleju oraz paliwa, aby zadbać o czystość i jakość pracy silnika.</li>
-                <li><span class="highlight">Płyny eksploatacyjne</span> – Oferujemy wymianę płynu hamulcowego, chłodniczego oraz płynu wspomagania, co zapewnia bezpieczną i komfortową jazdę.</li>
-                <li><span class="highlight">Świece zapłonowe i żarowe</span> – Odpowiednia wymiana świec jest kluczowa dla optymalnej pracy silnika, szczególnie w samochodach benzynowych i diesla.</li>
-                <li><span class="highlight">Akumulatory</span> – Oferujemy diagnostykę i wymianę akumulatorów, aby Twój samochód był zawsze gotowy do działania, bez względu na warunki.</li>
-            </ul>
-            <p>
-                Ponadto, wykonujemy inne istotne usługi serwisowe, takie jak: wymiana pasków klinowych, kontrola i wymiana zawieszenia, oraz kompleksowe serwisowanie układu wydechowego. Zawsze działamy zgodnie z zaleceniami producenta pojazdu, dzięki czemu każda wymiana jest profesjonalna i precyzyjna.
-            </p>
-            <p>
-                <span class="highlight">Oferujemy także sezonowe przeglądy,</span> które pozwalają wykryć potencjalne problemy zanim staną się one poważnymi awariami. Naszym priorytetem jest zapewnienie, że Twój samochód działa bezawaryjnie w każdych warunkach drogowych.
-            </p>
-            <p>
-                <span class="highlight">Niezależnie od tego, czy potrzebujesz drobnej wymiany, czy bardziej zaawansowanej usługi,</span> jesteśmy tutaj, aby pomóc. Naszym celem jest zapewnienie, że każdy klient wyjedzie z naszego serwisu w pełni zadowolony.
-            </p>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Grygiel Auto Serwis</p>
-            <p>Adres: ul. Starołęcka 85, 61-341 Poznań</p>
-            <p>Kontakt: <a href="tel:+48123456789">+48 123 456 789</a></p>
-            <p>Email: <a href="mailto:biuro@grygiel-autoserwis.pl">biuro@grygiel-autoserwis.pl</a></p>
-        </footer>
-    </body>
 </html>

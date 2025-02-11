@@ -88,7 +88,7 @@
         <header>
             <h1>Grygiel Auto Serwis</h1>
             <a class="image-button" href="index.html">
-                <img src="zdjeciainne/krzysztof-grygiel-logo.jpg" alt="Logo" width="150" height="79">
+                <img src="../zdjeciainne/krzysztof-grygiel-logo.jpg" alt="Logo" width="150" height="79">
             </a>
         </header>
 
